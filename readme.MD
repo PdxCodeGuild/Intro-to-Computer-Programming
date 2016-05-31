@@ -19,7 +19,7 @@
     * Input()
  - Have the students make a Madlib.
  - Example File:
-    * https://onedrive.live.com/redir?resid=670F7823653E09D7!8328&authkey=!AGciyhs5jHI9AgY&ithint=file%2cpy
+    * [/example-files/madlib.py](https://github.com/PdxCodeGuild/Intro-to-Computer-Programming/blob/master/example-files/madlib.py)
 
 # Day 2
  - Other Data Types
@@ -28,14 +28,14 @@
     * for
     * while
  - Conditional Logic/Booleans
- - Boolean quiz at https://onedrive.live.com/redir?resid=670F7823653E09D7!8635&authkey=!ANnvITc1d7TZ4Ag&ithint=file%2cpy
+ - Boolean quiz at [/example-files/boolgame.py](https://github.com/PdxCodeGuild/Intro-to-Computer-Programming/blob/master/example-files/boolgame.py)
  - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
 
 # Day 3
  - Functions
  - Review dictionary methods
  - Phone book challenge – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
-    * https://onedrive.live.com/redir?resid=670F7823653E09D7!8641&authkey=!AEsh9khTQl0ec-o&ithint=file%2cpy
+    * [/example-files/phonebook.py](https://github.com/PdxCodeGuild/Intro-to-Computer-Programming/blob/master/example-files/phonebook.py)
 
 # Day 4
  - Python Modules
