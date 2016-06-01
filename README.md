@@ -20,7 +20,7 @@ This is a course using python3.x, pip3, atom
  - Input()
 - Have the students make a Madlib.
  - Example File:
-    * [/example-files/madlib.py](https://github.com/PdxCodeGuild/Intro-to-Computer-Programming/blob/master/example-files/madlib.py)
+    * [/example-files/madlib.py](./example-files/madlib.py)
 
 # Day 2
 - [Primative types](https://docs.python.org/3.5/library/stdtypes.html)
@@ -30,6 +30,7 @@ This is a course using python3.x, pip3, atom
  - Lists
  - Dictionaries
  - Tuples and collections.namedtuple
+
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -78,6 +79,7 @@ capitalize(...)
 >>> '**** {} ****'.format('grape')
 '**** grape ****'
 ```
+
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -104,11 +106,40 @@ bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
+>>> if 1 == 1:
+...     print("cat")
+...
+cat
+>>> if 1 == 3:
+...     print("cat")
+... else:
+...     print("dog")
+...
+dog
 >>> print("cat" if 1 == 1 else "dog")
 cat
 >>> print("cat" if 1 == 3 else "dog")
 dog
->>> 
+>>> any((1 == 1, 1 == 3))
+True
+>>> all((1 == 1, 1 == 3))
+False
+>>> any((True, False, False))
+True
+>>> bool.
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ bit_length       conjugate        denominator      from_bytes                    │
+│ imag             mro              numerator        real                          │
+│ to_bytes                                                                         │
+└──────────────────────────────────────────────────────────────────────────────────┘
+>>> issubclass(bool, int)
+True
+>>> if 0:
+...     print("0 equals true")
+... elif 1:
+...     print("1 equals true")
+...
+1 equals true
 ```
 - Conditional Logic/Booleans
  - Boolean quiz at [/example-files/boolgame.py](./example-files/boolgame.py)
