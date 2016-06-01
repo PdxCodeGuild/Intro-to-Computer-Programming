@@ -155,8 +155,10 @@ True
 <class 'float'>
 >>> float.as_integer_ratio(1/3)
 (6004799503160661, 18014398509481984)
->>> _[0] / _[1]
+>>> 6004799503160661/1801439850948198
 0.3333333333333333
+>>> 6004799503160661/1801439850948198 == 1/3
+False
 ```
 #### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
 #### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
