@@ -1,4 +1,5 @@
 # Introduction to Computer Programming
+This is a course using python3.x, pip3, atom
 
 ## Overall Goals
 1.	Give attendees a basic foundation to launch their learning journey (ex. Setting up environment)
