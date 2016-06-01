@@ -22,10 +22,8 @@ This is a course using python3.x, pip3, atom
  - Example File: [madlib.py](./example-files/madlib.py)
 
 ## Day 2
-### [Primative types](https://docs.python.org/3.5/library/stdtypes.html)
- - List
- - Dictionary
- - Tuples and collections.namedtuple
+### [Primative types](https://docs.python.org/3.5/library/stdtypes.html) and Exploration of Types
+In this section we develop a more complete understanding of types. In your career you will likely run into code that is confusing. Gere we gain the skills needed to better explore types.
 
 #### [String](https://docs.python.org/3.5/library/string.html)
 ```
@@ -160,6 +158,10 @@ True
 >>> _[0] / _[1]
 0.3333333333333333
 ```
+#### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
+#### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
+#### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+#### Tuple and collections.namedtuple
 
 ### Control Flow
  - Loops
@@ -192,7 +194,7 @@ dog
 1 equals true
 ```
 - Conditional Logic/Booleans
- - Boolean quiz at [/example-files/boolgame.py](./example-files/boolgame.py)
+ - Boolean quiz at [boolgame.py](./example-files/boolgame.py)
  - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
 
 # Day 3
