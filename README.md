@@ -10,6 +10,7 @@ This is a course using python3.x, pip3, atom
 ## Lecture Materials
 1. [Day 1](./DAY1.md)
 2. [Day 2](./DAY2.md)
+
 # Day 3
  - Functions
  - Review dictionary methods
