@@ -1,7 +1,7 @@
 # Day 1 - Setup Environment, Shell, Basic Programming, First Exercise
 ## Setup Environment
 1. [Atom](https://github.com/selassid/codeguild/blob/master/notes/atom.md) and [Tricks](https://github.com/selassid/codeguild/blob/master/notes/atom-python.md)
-2. 
+2. [Python](https://github.com/selassid/codeguild/blob/master/notes/py.md)
 
 ## [Shell](https://github.com/selassid/codeguild/blob/master/notes/cli.md)
 - Get right version of python installed
