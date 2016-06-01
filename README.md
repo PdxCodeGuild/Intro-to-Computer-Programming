@@ -2,10 +2,10 @@
 This is a course using python3.x, pip3, atom
 
 ## Overall Goals
-1.	Give attendees a basic foundation to launch their learning journey (ex. Setting up environment)
-2.	Vet students who have applied to bootcamp
-3.	Create an opportunity for students to decide if programming is for them
-4.	Market Code Guild
+1. Give attendees a basic foundation to launch their learning journey (ex. Setting up environment)
+2. Vet students who have applied to bootcamp
+3. Create an opportunity for students to decide if programming is for them
+4. Market Code Guild
 
 ## Day 1
 - Get right version of python installed
@@ -13,22 +13,22 @@ This is a course using python3.x, pip3, atom
 - Teach basic command line (Most students will have never used or seen Bash/PowerShell)
 - Python
  - Variables
- - Strings
+ - Using Strings
  - print()
  - String concatenation
  - String method .format()
  - Input()
 - Have the students make a Madlib.
- - Example File:
-    * [/example-files/madlib.py](./example-files/madlib.py)
+ - Example File: [madlib.py](./example-files/madlib.py)
 
 # Day 2
 - [Primative types](https://docs.python.org/3.5/library/stdtypes.html)
- - [Strings](https://docs.python.org/3.5/library/string.html)
+ - [String](https://docs.python.org/3.5/library/string.html)
  - Integer
- - Floats
- - Lists
- - Dictionaries
+ - Boolean
+ - Float
+ - List
+ - Dictionary
  - Tuples and collections.namedtuple
 
 ```
@@ -106,6 +106,44 @@ bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
+>>> True
+True
+>>> False
+False
+>>> 1 == 1
+True
+>>> 1 == 3
+False
+>>> any((1 == 1, 1 == 3))
+True
+>>> all((True, True, False))
+False
+>>> any((True, False, False))
+True
+>>> not True
+False
+>>> not False
+True
+>>> bool.
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ bit_length       conjugate        denominator      from_bytes                    │
+│ imag             mro              numerator        real                          │
+│ to_bytes                                                                         │
+└──────────────────────────────────────────────────────────────────────────────────┘
+>>> issubclass(bool, int)
+True
+>>> bool.mro()
+[<class 'bool'>, <class 'int'>, <class 'object'>]
+>>> not 1
+False
+>>> not 0
+True
+>>>
+```
+
+```
+$ bpython
+bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
 >>> if 1 == 1:
 ...     print("cat")
 ...
@@ -120,20 +158,6 @@ dog
 cat
 >>> print("cat" if 1 == 3 else "dog")
 dog
->>> any((1 == 1, 1 == 3))
-True
->>> all((1 == 1, 1 == 3))
-False
->>> any((True, False, False))
-True
->>> bool.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ bit_length       conjugate        denominator      from_bytes                    │
-│ imag             mro              numerator        real                          │
-│ to_bytes                                                                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> issubclass(bool, int)
-True
 >>> if 0:
 ...     print("0 equals true")
 ... elif 1:
