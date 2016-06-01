@@ -28,8 +28,8 @@ This is a course using python3.x, pip3, atom
  - Integer
  - Floats
  - Lists
- - Tuples and collections.namedtuple
  - Dictionaries
+ - Tuples and collections.namedtuple
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
