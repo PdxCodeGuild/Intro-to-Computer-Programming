@@ -22,16 +22,12 @@ This is a course using python3.x, pip3, atom
  - Example File: [madlib.py](./example-files/madlib.py)
 
 ## Day 2
-- [Primative types](https://docs.python.org/3.5/library/stdtypes.html)
- - [String](https://docs.python.org/3.5/library/string.html)
- - Integer
- - Boolean
- - Float
+### [Primative types](https://docs.python.org/3.5/library/stdtypes.html)
  - List
  - Dictionary
  - Tuples and collections.namedtuple
 
-### [String](https://docs.python.org/3.5/library/string.html)
+#### [String](https://docs.python.org/3.5/library/string.html)
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -80,7 +76,7 @@ capitalize(...)
 >>> '**** {} ****'.format('grape')
 '**** grape ****'
 ```
-
+#### Integer
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -99,7 +95,7 @@ bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
 >>> int.bit_length(9)
 4
 ```
-
+#### Boolean
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -137,7 +133,7 @@ False
 True
 >>>
 ```
-
+#### Float
 ```
 >>> type(5.5)
 <class 'float'>
@@ -165,15 +161,12 @@ True
 0.3333333333333333
 ```
 
-```
-```
-```
-
-- Control Flow
- - if, elif and else, ternary
+### Control Flow
  - Loops
   - for
   - while
+
+#### if, elif and else, ternary
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
