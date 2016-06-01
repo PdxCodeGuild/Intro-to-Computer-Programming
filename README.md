@@ -13,8 +13,7 @@ This is a course using python3.x, pip3, atom
 # Day 3
  - Functions
  - Review dictionary methods
- - Phone book challenge – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
-    * [/example-files/phonebook.py](https://github.com/PdxCodeGuild/Intro-to-Computer-Programming/blob/master/example-files/phonebook.py)
+ - [Phone book challenge](./example-files/phonebook.py) – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
 
 # Day 4
  - Python Modules
