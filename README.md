@@ -159,6 +159,8 @@ True
 0.3333333333333333
 >>> 6004799503160661/1801439850948198 == 1/3
 False
+>>> 1/3 == 3/9
+True
 ```
 #### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
 #### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
