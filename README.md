@@ -21,7 +21,7 @@ This is a course using python3.x, pip3, atom
 - Have the students make a Madlib.
  - Example File: [madlib.py](./example-files/madlib.py)
 
-# Day 2
+## Day 2
 - [Primative types](https://docs.python.org/3.5/library/stdtypes.html)
  - [String](https://docs.python.org/3.5/library/string.html)
  - Integer
@@ -31,6 +31,7 @@ This is a course using python3.x, pip3, atom
  - Dictionary
  - Tuples and collections.namedtuple
 
+### [String](https://docs.python.org/3.5/library/string.html)
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -98,11 +99,7 @@ bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
 >>> int.bit_length(9)
 4
 ```
-- Control Flow
- - if, elif and else, ternary
- - Loops
-  - for
-  - while
+
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
@@ -141,6 +138,42 @@ True
 >>>
 ```
 
+```
+>>> type(5.5)
+<class 'float'>
+>>> float.mro()
+[<class 'float'>, <class 'object'>]
+>>> float.
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│ as_integer_ratio       conjugate              fromhex                            │
+│ hex                    imag                   is_integer                         │
+│ mro                    real                                                      │
+└──────────────────────────────────────────────────────────────────────────────────┘
+>>> 1/3
+0.3333333333333333
+>>> type(1/3)
+<class 'float'>
+>>> type(1)
+<class 'int'>
+>>> type(3)
+<class 'int'>
+>>> type(1/3)
+<class 'float'>
+>>> float.as_integer_ratio(1/3)
+(6004799503160661, 18014398509481984)
+>>> _[0] / _[1]
+0.3333333333333333
+```
+
+```
+```
+```
+
+- Control Flow
+ - if, elif and else, ternary
+ - Loops
+  - for
+  - while
 ```
 $ bpython
 bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
