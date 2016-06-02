@@ -81,5 +81,6 @@ print(story.format(adjective_one='funky', noun_one='wizard', adjective_two='span
 ```
 
 ### Input()
+
 ### Have the students make a [Madlib](./example-files/madlib.py)
 

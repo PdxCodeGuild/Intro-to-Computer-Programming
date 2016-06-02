@@ -1,5 +1,4 @@
-# Introduction to Computer Programming
-This is a course using python3.x, pip3, atom
+# Learn Python the Guild Way
 
 ## Overall Goals
 1. Give attendees a basic foundation to launch their learning journey (ex. Setting up environment)
@@ -7,9 +6,15 @@ This is a course using python3.x, pip3, atom
 3. Create an opportunity for students to decide if programming is for them
 4. Market Code Guild
 
+## Form of Course
+As a student here, you will have access to this material. I intend to walk through the material, likely straying from each days preperations, and end each class with a print out.
+
+There exists a copy of this material online, feel free to enjoy it.
+
 ## Lecture Materials
 1. [Day 1](./DAY1.md)
 2. [Day 2](./DAY2.md)
+3. [Day 3](./DAY3.md)
 
 # Day 3
  - Functions
