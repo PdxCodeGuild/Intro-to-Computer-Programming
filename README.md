@@ -16,10 +16,6 @@ There exists a copy of this material online, feel free to enjoy it.
 2. [Day 2](./DAY2.md)
 3. [Day 3](./DAY3.md)
 
-# Day 3
- - Functions
- - Review dictionary methods
- - [Phone book challenge](./example-files/phonebook.py) – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
 
 # Day 4
  - Python Modules
