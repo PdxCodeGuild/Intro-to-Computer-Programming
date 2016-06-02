@@ -51,7 +51,7 @@ print("THIS IS HOW YOU PRINT")
 
 print "THIS IS HOW YOU PRINT"
 ```
-### String concatenation
+### String concatenation and format() method
 ```python
 #!/usr/bin/env/python
 
