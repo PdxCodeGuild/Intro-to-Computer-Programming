@@ -58,6 +58,7 @@ print "THIS IS HOW YOU PRINT"
 x = 'elephant'
 y = 'pig'
 
+# string concatination
 print(x, y)
 print(x + y)
 print(x*3 + y*2)
@@ -68,13 +69,15 @@ print(z)
 z = x + ' loves ' + y 
 print(z)
 
+# use of .format method
 z = '{} loves {}!'
 print(z.format(x, y))
 print(z.format(y, x))
 print(z.format('philip', 'hats'))
 
-story = 'the {adjective_one} brown {noun_one} jumps over the {adjective_two} {noun_two}'
-print(story.format(adjective_one='quick', noun_one='fox', adjective_two='lazy', noun_two='dog'))
+story = 'The exodus of {adjective_one} {nount_one}s is craved by {adjective_one} {noun_two}s.'
+print(story.format(adjective_one='jazzy', noun_one='pidgeon', adjective_two='squeamish', noun_two='walker'))
+print(story.format(adjective_one='funky', noun_one='wizard', adjective_two='spanish', noun_two='camel'))
 ```
 
 ### Input()
