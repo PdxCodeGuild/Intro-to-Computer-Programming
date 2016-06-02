@@ -3,17 +3,15 @@
 1. [Atom](https://github.com/selassid/codeguild/blob/master/notes/atom.md) and [Tricks](https://github.com/selassid/codeguild/blob/master/notes/atom-python.md)
 2. [Python](https://github.com/selassid/codeguild/blob/master/notes/py.md)
 
-## [Shell](https://github.com/selassid/codeguild/blob/master/notes/cli.md)
-- Get right version of python installed
-- Get atom installed
-- Teach basic command line (Most students will have never used or seen Bash/PowerShell)
-- Python
- - Variables
- - Using Strings
- - print()
- - String concatenation
- - String method .format()
- - Input()
-- Have the students make a Madlib.
- - Example File: [madlib.py](./example-files/madlib.py)
+## Shell
+A shell is another way for you to interact with your computer. This is often a CLI (Command Line Interface) as apposed to a GUI (Graphical User Interface). Developers often favor CLI due to the ease of automating repetative tasks. We will to look at [Powershell/Bash](https://github.com/selassid/codeguild/blob/master/notes/cli.md) and how it compares to your GUI.
+
+## Python
+### Variables
+### Using Strings
+### print()
+### String concatenation
+### String method .format()
+### Input()
+### Have the students make a [Madlib](./example-files/madlib.py)
 
