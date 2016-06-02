@@ -29,6 +29,10 @@ print(x)
 y = 'cat'
 print(x, y)
 
+# pattern matched assignment
+a, b = 'thats', 'neat!'
+print(a, b)
+
 # What do you think this does?
 x, y = y, x
 print(x, y)
@@ -48,6 +52,31 @@ print("THIS IS HOW YOU PRINT")
 print "THIS IS HOW YOU PRINT"
 ```
 ### String concatenation
+```python
+#!/usr/bin/env/python
+
+x = 'elephant'
+y = 'pig'
+
+print(x, y)
+print(x + y)
+print(x*3 + y*2)
+
+z = x + y
+print(z)
+
+z = x + ' loves ' + y 
+print(z)
+
+z = '{} loves {}!'
+print(z.format(x, y))
+print(z.format(y, x))
+print(z.format('philip', 'hats'))
+
+story = 'the {adjective_one} brown {noun_one} jumps over the {adjective_two} {noun_two}'
+print(story.format(adjective_one='quick', noun_one='fox', adjective_two='lazy', noun_two='dog'))
+```
+
 ### String method .format()
 ### Input()
 ### Have the students make a [Madlib](./example-files/madlib.py)
