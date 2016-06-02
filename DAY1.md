@@ -11,6 +11,8 @@ How to make a python file, and establishing a workflow.
 
 ### Variables
 ```python
+#!/usr/bin/env python
+
 # assignment
 x = 'cat'
 print(x)
