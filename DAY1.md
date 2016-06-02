@@ -9,7 +9,7 @@ A shell is another way for you to interact with your computer. This is often a C
 ## Python
 How to make a python file, and establishing a workflow.
 
-### Variables
+### Variables and Using Strings
 ```python
 #!/usr/bin/env python
 
@@ -34,7 +34,6 @@ x, y = y, x
 print(x, y)
 ```
 
-### Using Strings
 ### print()
 ### String concatenation
 ### String method .format()
