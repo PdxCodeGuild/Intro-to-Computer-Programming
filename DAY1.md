@@ -83,6 +83,23 @@ print(story.format(adjective_one='funky', noun_one='wizard', adjective_two='span
 ```
 
 ### Input()
+```python
+#!/usr/bin/env python
+
+x = input("Into variable 'x' i will save the value :")
+print("into x I saved the value {x}".format(x=x))
+
+x = input('again :')
+print("into x I saved the value {x}".format(x=x))
+
+y = input('what about something else?')
+print(y, 'has been saved into a variable in my program.')
+
+print('again :')
+y = input()
+print(y, 'has been saved into a variable in my program.')
+
+```
 
 ### Have the students make a [Madlib](./example-files/madlib.py)
 
