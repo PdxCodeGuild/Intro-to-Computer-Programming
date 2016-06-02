@@ -77,9 +77,22 @@ print(z.format(x, y))
 print(z.format(y, x))
 print(z.format('philip', 'hats'))
 
+# what is a panagram?
 story = 'The exodus of {adjective_one} {nount_one}s is craved by {adjective_one} {noun_two}s.'
 print(story.format(adjective_one='jazzy', noun_one='pidgeon', adjective_two='squeamish', noun_two='walker'))
 print(story.format(adjective_one='funky', noun_one='wizard', adjective_two='spanish', noun_two='camel'))
+
+# can we split this up?
+s = story.format(
+    adjective_one='lackadaisical',
+    noun_one='lemur',
+    adjective_two='lusting',
+    noun_two='lion'
+    )
+print(s)
+
+
+
 ```
 
 ### Input()
