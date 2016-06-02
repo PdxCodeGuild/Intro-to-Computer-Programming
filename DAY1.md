@@ -7,7 +7,31 @@
 A shell is another way for you to interact with your computer. This is often a CLI (Command Line Interface) as apposed to a GUI (Graphical User Interface). Developers often favor CLI due to the ease of automating repetative tasks. We will to look at [Powershell/Bash](https://github.com/selassid/codeguild/blob/master/notes/cli.md) and how it compares to your GUI.
 
 ## Python
+How to make a python file, and establishing a workflow.
+
 ### Variables
+```python
+# assignment
+x = 'cat'
+print(x)
+
+# reasignment
+x = 'dog'
+print(x)
+
+x = 'cat'
+x = 'dog'
+print(x)
+
+# multiple variables
+y = 'cat'
+print(x, y)
+
+# What do you think this does?
+x, y = y, x
+print(x, y)
+```
+
 ### Using Strings
 ### print()
 ### String concatenation
