@@ -42,7 +42,7 @@ print(x, y)
 
 ### print()
 1. The `print()` function allows us to write content to the `console`, also called a `terminal` or `CLI`.
-2. You may find **reputable** resources online that just don't work. Most people's first expirience with this is in python's print. Programming languages have release `versions` that may have different, often competing, `syntax`. This, [Python 2.7 vs Python 3.x](https://www.webucator.com/blog/2016/03/still-using-python-2-it-is-time-to-upgrade/), article can help you drink the Python 3.x Kool Aid.
+2. You may find **reputable** resources online that just don't work. Most people's first experience with this is in python's print. Programming languages have release `versions` that may have different, often competing, `syntax`. This, [Python 2.7 vs Python 3.x](https://www.webucator.com/blog/2016/03/still-using-python-2-it-is-time-to-upgrade/), article can help you drink the Python 3.x Kool Aid.
 ```python
 #!/usr/bin/env python3
 

@@ -1,5 +1,5 @@
 # Day 2 - Introduction to Types and Control Flow
-## [Primative types](https://docs.python.org/3.5/library/stdtypes.html) and Exploration of Types
+## [Primitive types](https://docs.python.org/3.5/library/stdtypes.html) and Exploration of Types
 In this section we develop a more complete understanding of types. In your career you will likely run into code that is confusing. Here we gain the skills needed to better explore types.
 
 ### [String](https://docs.python.org/3.5/library/string.html)
