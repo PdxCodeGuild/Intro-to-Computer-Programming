@@ -77,7 +77,6 @@ story = 'the {adjective_one} brown {noun_one} jumps over the {adjective_two} {no
 print(story.format(adjective_one='quick', noun_one='fox', adjective_two='lazy', noun_two='dog'))
 ```
 
-### String method .format()
 ### Input()
 ### Have the students make a [Madlib](./example-files/madlib.py)
 
