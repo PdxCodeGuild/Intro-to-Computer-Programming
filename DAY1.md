@@ -84,14 +84,12 @@ print(story.format(adjective_one='funky', noun_one='wizard', adjective_two='span
 
 # can we split this up?
 s = story.format(
-    adjective_one='lackadaisical',
-    noun_one='lemur',
-    adjective_two='lusting',
-    noun_two='lion'
+    adjective_one='lusting',
+    noun_one='lion'
+    adjective_two='lackadaisical',
+    noun_two='lemur',
     )
 print(s)
-
-
 
 ```
 
