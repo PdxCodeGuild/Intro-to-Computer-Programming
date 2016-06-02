@@ -138,6 +138,8 @@ True
 ### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+1. Check out my [videos](https://www.youtube.com/watch?v=XSf-bbIhPUU&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S&index=5) on dictionaries if you need more information
+
 ### Tuple and collections.namedtuple
 
 ## Control Flow
