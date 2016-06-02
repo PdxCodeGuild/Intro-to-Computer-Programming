@@ -46,12 +46,12 @@ print(x, y)
 ```python
 #!/usr/bin/env python3
 
-print("THIS IS HOW YOU PRINT")
+print("THIS IS HOW YOU PRINT IN PYTHON 3.x")
 ```
 ```python
 #!/usr/bin/env python2.7
 
-print "THIS IS HOW YOU PRINT"
+print "THIS IS HOW YOU PRINT IN PYTHON 2.x"
 ```
 ### String concatenation and format() method
 ```python
