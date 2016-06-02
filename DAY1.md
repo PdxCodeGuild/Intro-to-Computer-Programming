@@ -32,7 +32,7 @@ y = 'cat'
 print(x, y)
 
 # pattern matched assignment
-a, b = 'thats', 'neat!'
+b, a = 'neat!', 'thats'
 print(a, b)
 
 # What do you think this does?
