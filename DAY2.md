@@ -1,6 +1,6 @@
 # Day 2 - Introduction to Types and Control Flow
 ## [Primative types](https://docs.python.org/3.5/library/stdtypes.html) and Exploration of Types
-In this section we develop a more complete understanding of types. In your career you will likely run into code that is confusing. Gere we gain the skills needed to better explore types.
+In this section we develop a more complete understanding of types. In your career you will likely run into code that is confusing. Here we gain the skills needed to better explore types.
 
 ### [String](https://docs.python.org/3.5/library/string.html)
 ```
@@ -138,7 +138,8 @@ True
 ### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-1. Check out my [videos](https://www.youtube.com/watch?v=rtwAG8EdgDE&index=2&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S) on dictionaries if you need more information
+1. 
+2. Check out my [videos](https://www.youtube.com/watch?v=rtwAG8EdgDE&index=2&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S) on dictionaries if you need more information. This is about 30 minutes of content going from introductory to advanced use of dictionaries. My environment is a little different, so print statements may show up differently than you are used to.
 
 ### Tuple and collections.namedtuple
 
