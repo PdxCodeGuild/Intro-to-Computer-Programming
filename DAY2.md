@@ -206,6 +206,28 @@ True
 ```
 
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
+Sets are unordered but faster.
+```
+>>> *li,  = range(200000000)
+>>> si    = set(li)
+>>> value = li[-1]
+>>> value
+199999999
+>>> value in li
+True
+>>> value in si
+True
+```
+```
+>>> li = ['pig', 'elephant', 345]
+>>> si = set(li)
+>>> print(si)
+{345, 'pig', 'elephant'}
+>>> si.add('olympia')
+>>> si
+{'olympia', 345, 'pig', 'elephant'}
+```
+
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 1. 
 2. Check out my [videos](https://www.youtube.com/watch?v=rtwAG8EdgDE&index=2&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S) on dictionaries if you need more information. This is about 30 minutes of content going from introductory to advanced use of dictionaries. My environment is a little different, so print statements may show up differently than you are used to.
