@@ -12,9 +12,9 @@ As a student here, you will have access to this material. I intend to walk throu
 There exists a copy of this material online, feel free to enjoy it.
 
 ## Lecture Materials
-1. [Day 1](./DAY1.md)
-2. [Day 2](./DAY2.md)
-3. [Day 3](./DAY3.md)
+1. [Day 1](./1DAY.md)
+2. [Day 2](./2DAY.md)
+3. [Day 3](./3DAY.md)
 
 
 # Day 4
