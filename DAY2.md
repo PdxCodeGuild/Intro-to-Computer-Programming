@@ -137,6 +137,74 @@ True
 0.3333333333333333
 ```
 ### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
+List is our first complex data type. A list is an ordered collection of elements.
+```
+$ bpython
+bpython version 0.14.2 on top of Python 2.7.8 /usr/bin/python2
+>>> lx = list()
+>>> lx
+[]
+>>> print(type(lx))
+<type 'list'>
+>>> li = [3, 3, 3]
+>>> print(type(li))
+<type 'list'>
+>>> print(li)
+[3, 3, 3]
+>>> lj = [4, 5, 6, 7, 8]
+>>> print(li + lj)
+[3, 3, 3, 4, 5, 6, 7, 8]
+>>> print(lj + li)
+[4, 5, 6, 7, 8, 3, 3, 3]
+>>> print(li,lj)
+([3, 3, 3], [4, 5, 6, 7, 8])
+>>> lk = ['cat', 'dog', 'elephant', 'pig']
+>>> print(lk + li)
+['cat', 'dog', 'elephant', 'pig', 3, 3, 3]
+>>> lm = lk + lj
+>>> print(lm)
+['cat', 'dog', 'elephant', 'pig', 4, 5, 6, 7, 8]
+>>> lm.append('jupiter')
+>>> lj
+[4, 5, 6, 7, 8]
+>>> lm
+['cat', 'dog', 'elephant', 'pig', 4, 5, 6, 7, 8, 'jupiter']
+>>> lm[1]
+'dog'
+>>> lm[0]
+'cat'
+>>> lm[-1]
+'jupiter'
+>>> lm[10]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+IndexError: list index out of range
+>>> lm[-10]
+'cat'
+>>> lm[-11]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+IndexError: list index out of range
+>>> lm.
+┌──────────────────────────────────────────────────────────┐
+│ append     count      extend     index      insert       │
+│ pop        remove     reverse    sort                    │
+└──────────────────────────────────────────────────────────┘
+>>> lm == lm
+True
+>>> lm is lm
+True
+>>> li
+[3, 3, 3]
+>>> li == [3, 3, 3]
+True
+>>> li is [3, 3, 3]
+False
+>>> 4 is 4
+True
+>>> 
+```
+
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 1. 
