@@ -32,7 +32,7 @@ def example_six(x):
     def example_five(x, y):
         return x * y
 
-    return example_five(x, y)
+    return example_five(x, x)
 ```
  - Review dictionary methods
  - [Phone book challenge](./example-files/phonebook.py) – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
