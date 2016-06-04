@@ -34,5 +34,17 @@ def example_six(x):
 
     return example_five(x, x)
 ```
+```python
+#!/usr/bin/env python
+
+def func(x, fund):
+    return x + fund(x)
+
+def fune(x):
+    return x ** 2
+
+func(5, fune)
+```
+
  - Review dictionary methods
  - [Phone book challenge](./example-files/phonebook.py) – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
