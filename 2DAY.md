@@ -235,10 +235,6 @@ True
 ### Tuple and collections.namedtuple
 
 ## Control Flow
- - Loops
-  - for
-  - while
-
 ### if, elif and else, ternary
 ```
 $ bpython
@@ -264,6 +260,89 @@ dog
 ...
 1 equals true
 ```
+### Loops - For, While, Break, Continue
+Loops are a code structure we use to identify repeated tasks. There are two major types of loops. `for` loops and `while` loops.
+
+```python
+#!/usr/bin/env python
+
+iterable = [0, 10, -2, 3, 4]
+for element in iterable:
+    print(element)
+
+iterable = {0, 10, -2, 3, 4}
+for element in iterable:
+    print(element)
+
+iterable = {0:'zero', 10:'ten', -2:'negative two', 3:'three', 4:'four'}
+for element in iterable:
+    print(element)
+
+for element in iterable:
+    print('at key "{key}", value "{value}" is stored.'.format(key=element, value=iterable[element]))
+```
+
+```python
+#!/usr/bin/env python
+
+print('program start')
+_ = input()
+i = 0
+while i < 10:
+    print(i)
+    i = i + 1
+
+
+_ = input()
+while i > 0:
+    print(i)
+    i = i - 1
+
+_ = input()
+while False:
+    print('This will never print')
+
+_ = input()
+while True:
+    print('This will print forever')
+
+```
+It is important to also understand flow in loops.
+
+```python
+#!/usr/bin/env python
+
+
+_ = input()
+iterable = [0, 10, -1, 3, 4]
+for element in iterable:
+    print(element)
+    if element < 0:
+        break # is like stop
+
+
+_ = input()
+for index, element in enumerate(iterable):
+    if index > 3:
+        break
+    print(element):
+
+
+_ = input()
+for element in iterable:
+    if element > 5:
+        continue # is like ignore everything after this
+    print(element)
+
+
+_ = input()
+for element in iterable:
+    print(element)
+    continue # has nothing to ignore
+
+```
+
 - Conditional Logic/Booleans
  - Boolean quiz at [boolgame.py](./example-files/boolgame.py)
  - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
+
