@@ -1,6 +1,6 @@
 # Day 3
 ### Functions
-```
+```python
 #!/usr/bin/env python
 
 def example_one():
@@ -12,7 +12,7 @@ def example_two():
 def example_three(x):
     return x
 ```
-```
+```python
 #!/usr/bin/env python
 
 x = 7
@@ -22,7 +22,7 @@ def example_four(x):
 
 example_four(3)
 ```
-```
+```python
 #!/usr/bin/env python
 
 def example_five(x, y):
