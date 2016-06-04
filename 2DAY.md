@@ -313,7 +313,7 @@ It is important to also understand flow in loops.
 #!/usr/bin/env python
 
 
-_ = input()
+_ = input('... pause ...')
 iterable = [0, 10, -1, 3, 4]
 for element in iterable:
     print(element)
@@ -321,25 +321,32 @@ for element in iterable:
         break # is like stop
 
 
-_ = input()
+_ = input('... pause ...')
 for index, element in enumerate(iterable):
     if index > 3:
         break
     print(element):
 
 
-_ = input()
+_ = input('... pause ...')
 for element in iterable:
     if element > 5:
         continue # is like ignore everything after this
     print(element)
 
 
-_ = input()
+_ = input('... pause ...')
 for element in iterable:
     print(element)
     continue # has nothing to ignore
 
+
+_ = input('... pause ...')
+while True:
+    text = input()
+    if not text:
+        break
+    print(text)
 ```
 
 - Conditional Logic/Booleans
