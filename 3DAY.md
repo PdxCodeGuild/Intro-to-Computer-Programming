@@ -45,6 +45,18 @@ def fune(x):
 
 func(5, fune)
 ```
+```python
+#!/usr/bin/env python
+def func(x):
+    return x * x
+
+li = [0, 1, 2, 3, 4, 5, 6, 7]
+
+for index, value in enumerate(li):
+    li[index] = func(li[index])
+
+print(li)
+```
 
  - Review dictionary methods
  - [Phone book challenge](./example-files/phonebook.py) – Have students make a phonebook program that will give the user a menu and have the capability to search, add, change and remove entries.
