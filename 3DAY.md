@@ -46,6 +46,7 @@ def fune(x):
 func(5, fune)
 ```
 ```python
+
 #!/usr/bin/env python
 def func(x):
     return x * x
@@ -56,6 +57,18 @@ for index, value in enumerate(li):
     li[index] = func(value)
 
 print(li)
+```
+```python
+#!/usr/bin/env python
+
+cat = 'meow'
+
+def cat_changer():
+    cat = 'purr'
+    print('inside cat: ', cat)
+
+cat_changer()
+print('outside cat: ', cat)
 ```
 
  - Review dictionary methods
