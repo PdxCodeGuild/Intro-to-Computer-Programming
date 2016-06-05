@@ -53,7 +53,7 @@ def func(x):
 li = [0, 1, 2, 3, 4, 5, 6, 7]
 
 for index, value in enumerate(li):
-    li[index] = func(li[index])
+    li[index] = func(value)
 
 print(li)
 ```
