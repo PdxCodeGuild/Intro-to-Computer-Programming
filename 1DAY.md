@@ -11,6 +11,27 @@ A shell is another way for you to interact with your computer. This is often a C
 ## Python
 In this course we are introducing you to python. Our first exercise will show you how to make a python file, establish a workflow, understand variables and introduce some programming vocabulary.
 
+I suggest having `ipython shell` and your `atom editor` both open in your workspace, until you develop your own work flow. Those with mac or linux can install use `bpython shell` if they prefer.
+
+### disabling magic in your ipython environment
+```
+$ ipython3
+Python 3.4.2 (default, Jul  9 2015, 17:24:30)
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.1.2 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: ip = get_ipython()
+
+In [2]: ip.Completer.matchers.remove(ip.Completer.magic_matches)
+
+In [3]:
+```
+
 ### Variables and Using Strings
 ```python
 #!/usr/bin/env python
@@ -57,6 +78,11 @@ print "THIS IS HOW YOU PRINT IN PYTHON 2.x"
 ```python
 #!/usr/bin/env/python
 
+def pause():
+    # pause program until user input
+    _ = input()
+
+
 x = 'elephant'
 y = 'pig'
 
@@ -68,7 +94,7 @@ print(x*3 + y*2)
 z = x + y
 print(z)
 
-z = x + ' loves ' + y 
+z = x + ' loves ' + y
 print(z)
 
 # use of .format method
@@ -91,6 +117,36 @@ s = story.format(
     )
 print(s)
 
+# can we check if something is a panagram?
+print(str.count(s, 'a'))
+print(str.count(s, 'b'))
+print(str.count(s, 'c'))
+print(str.count(s, 'd'))
+print(str.count(s, 'e'))
+print(str.count(s, 'f'))
+print(str.count(s, 'g'))
+
+print(s.count('h'))
+print(s.count('i'))
+print(s.count('j'))
+print(s.count('k'))
+print(s.count('l'))
+print(s.count('m'))
+
+print('n' in s)
+print('o' in s)
+print('p' in s)
+print('q' in s)
+print('r' in s)
+
+print(s.count('s'))
+print(s.count('t'))
+print(s.count('u'))
+print(s.count('v'))
+print(s.count('w'))
+print(s.count('x'))
+print(s.count('y'))
+print(s.count('z'))
 ```
 
 ### Input()
@@ -109,7 +165,6 @@ print(y, 'has been saved into a variable in my program.')
 print('again :')
 y = input()
 print(y, 'has been saved into a variable in my program.')
-
 ```
 
 ### Have the students make a [Madlib](./example-files/madlib.py)
