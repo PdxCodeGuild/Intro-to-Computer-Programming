@@ -63,6 +63,7 @@ print(li)
 
 """
 'scope of a variable is defined at the level of assignment' -- Elana Hashman
+https://www.youtube.com/watch?v=CjYEpVNbM-s
 """
 
 cat = 'meow'
