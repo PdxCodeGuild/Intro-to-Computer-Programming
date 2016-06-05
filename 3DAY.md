@@ -61,6 +61,10 @@ print(li)
 ```python
 #!/usr/bin/env python
 
+"""
+'scope of a variable is defined at the level of assignment' -- Elana Hashman
+"""
+
 cat = 'meow'
 
 def cat_changer():
