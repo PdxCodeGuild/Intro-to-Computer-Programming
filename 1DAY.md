@@ -109,11 +109,13 @@ print(z.format('philip', 'hats'))
 #!/usr/bin/env python
 # what is a panagram?
 story_tamplate = 'The exodus of {adjective_one} {noun_one}s is craved by {adjective_one} {noun_two}s.'
+print(story_template)
+
 print(story_template.format(adjective_one='jazzy', noun_one='pidgeon', adjective_two='squeamish', noun_two='walker'))
 print(story_template.format(adjective_one='funky', noun_one='wizard', adjective_two='spanish', noun_two='camel'))
 
 # can we split this up?
-s = story_template.format(
+my_story = story_template.format(
     adjective_one='lusting',
     noun_one='lion',
     adjective_two='lackadaisical',
@@ -122,26 +124,24 @@ s = story_template.format(
 print(s)
 
 # can we check if something is a panagram?
-print('a', str.count(s, 'a'))
-print('b', str.count(s, 'b'))
-print('c', str.count(s, 'c'))
-print('d', str.count(s, 'd'))
-print('e', str.count(s, 'e'))
-print('f', str.count(s, 'f'))
-print('g', str.count(s, 'g'))
+print('a', str.count(my_story, 'a'))
+print('b', str.count(my_story, 'b'))
+print('c', str.count(my_story, 'c'))
+print('d', str.count(my_story, 'd'))
+print('e', str.count(my_story, 'e'))
+print('f', str.count(my_story, 'f'))
+print('g', str.count(my_story, 'g'))
 
-print('h', s.count('h'))
-print('i', s.count('i'))
-print('j', s.count('j'))
-print('k', s.count('k'))
-print('l', s.count('l'))
-print('m', s.count('m'))
-
+print('h', my_story.count('h'))
+print('i', my_story.count('i'))
+print('j', my_story.count('j'))
+print('k', my_story.count('k'))
+print('l', my_story.count('l'))
+print('m', my_story.count('m'))
 ...
-
-print('x', s.count('x'))
-print('y', s.count('y'))
-print('z', s.count('z'))
+print('x', my_story.count('x'))
+print('y', my_story.count('y'))
+print('z', my_story.count('z'))
 ```
 
 ### Input()
