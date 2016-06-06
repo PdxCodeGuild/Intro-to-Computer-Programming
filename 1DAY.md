@@ -105,7 +105,7 @@ print(z.format('philip', 'hats'))
 
 ```
 
-```
+```python
 #!/usr/bin/env python
 # what is a panagram?
 story_tamplate = 'The exodus of {adjective_one} {noun_one}s is craved by {adjective_one} {noun_two}s.'
