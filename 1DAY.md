@@ -103,50 +103,45 @@ print(z.format(x, y))
 print(z.format(y, x))
 print(z.format('philip', 'hats'))
 
+```
+
+```
+#!/usr/bin/env python
 # what is a panagram?
-story = 'The exodus of {adjective_one} {nount_one}s is craved by {adjective_one} {noun_two}s.'
-print(story.format(adjective_one='jazzy', noun_one='pidgeon', adjective_two='squeamish', noun_two='walker'))
-print(story.format(adjective_one='funky', noun_one='wizard', adjective_two='spanish', noun_two='camel'))
+story_tamplate = 'The exodus of {adjective_one} {noun_one}s is craved by {adjective_one} {noun_two}s.'
+print(story_template.format(adjective_one='jazzy', noun_one='pidgeon', adjective_two='squeamish', noun_two='walker'))
+print(story_template.format(adjective_one='funky', noun_one='wizard', adjective_two='spanish', noun_two='camel'))
 
 # can we split this up?
-s = story.format(
+s = story_template.format(
     adjective_one='lusting',
-    noun_one='lion'
+    noun_one='lion',
     adjective_two='lackadaisical',
     noun_two='lemur',
     )
 print(s)
 
 # can we check if something is a panagram?
-print(str.count(s, 'a'))
-print(str.count(s, 'b'))
-print(str.count(s, 'c'))
-print(str.count(s, 'd'))
-print(str.count(s, 'e'))
-print(str.count(s, 'f'))
-print(str.count(s, 'g'))
+print('a', str.count(s, 'a'))
+print('b', str.count(s, 'b'))
+print('c', str.count(s, 'c'))
+print('d', str.count(s, 'd'))
+print('e', str.count(s, 'e'))
+print('f', str.count(s, 'f'))
+print('g', str.count(s, 'g'))
 
-print(s.count('h'))
-print(s.count('i'))
-print(s.count('j'))
-print(s.count('k'))
-print(s.count('l'))
-print(s.count('m'))
+print('h', s.count('h'))
+print('i', s.count('i'))
+print('j', s.count('j'))
+print('k', s.count('k'))
+print('l', s.count('l'))
+print('m', s.count('m'))
 
-print('n' in s)
-print('o' in s)
-print('p' in s)
-print('q' in s)
-print('r' in s)
+...
 
-print(s.count('s'))
-print(s.count('t'))
-print(s.count('u'))
-print(s.count('v'))
-print(s.count('w'))
-print(s.count('x'))
-print(s.count('y'))
-print(s.count('z'))
+print('x', s.count('x'))
+print('y', s.count('y'))
+print('z', s.count('z'))
 ```
 
 ### Input()
