@@ -13,13 +13,14 @@ Field names and values should not contain extra whitespace, like spaces or newli
 My question is this program generates **data(list)** that has the same value in all its list entries that is the last line of the csv file.
 
 ```csv
-movie, director, time_min
-Marvin's Room, Jerry Zaks, 98
-Tucker and Dale vs Evil, Eli Craig, 89
-Quills, Philip Kaufman, 124
-The Man from Earth, Richard Schenkman, 87
-The Quest, Jean-Claude Van Damme, 95
-The Nine Lives of Fritz the Cat, Robert Taylor, 77
+movie                            |   director               |   time_min
+---------------------------------|--------------------------|-----------
+Marvin's Room                    |   Jerry Zaks             |   98      
+Tucker and Dale vs Evil          |   Eli Craig              |   89      
+Quills                           |   Philip Kaufman         |   124     
+The Man from Earth               |   Richard Schenkman      |   87      
+The Quest                        |   Jean-Claude Van Damme  |   95      
+The Nine Lives of Fritz the Cat  |   Robert Taylor          |   77      
 ```
 ```python
 import csv
