@@ -38,10 +38,25 @@ Help on method_descriptor:
 
 capitalize(...)
     S.capitalize() -> str
-    
+
     Return a capitalized version of S, i.e. make the first character
     have upper case and the rest lower case.
-
+```
+* `capitalize`
+* `title`
+* `swapcase`
+* `ljust`, `rjust`
+* `upper`
+* `lower`
+* `isdigit`
+* `zfill`
+* `rfind`, `lfind`
+* `strip`
+* `index`, `find`
+* `replace`
+* `join`
+* `partition`, `rpartition`
+```
 >>> str.upper('cat')
 'CAT'
 >>> 'cat'.upper()
@@ -202,7 +217,7 @@ True
 False
 >>> 4 is 4
 True
->>> 
+>>>
 ```
 
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
@@ -229,7 +244,7 @@ True
 ```
 
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-1. 
+1.
 2. Check out my [videos](https://www.youtube.com/watch?v=rtwAG8EdgDE&index=2&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S) on dictionaries if you need more information. This is about 30 minutes of content going from introductory to advanced use of dictionaries. My environment is a little different, so print statements may show up differently than you are used to.
 
 ### Tuple and collections.namedtuple
@@ -352,4 +367,3 @@ while True:
 - Conditional Logic/Booleans
  - Boolean quiz at [boolgame.py](./example-files/boolgame.py)
  - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
-

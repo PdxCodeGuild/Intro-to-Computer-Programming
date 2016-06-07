@@ -3,13 +3,13 @@
 ```python
 #!/usr/bin/env python
 
-def example_one():
+def first_example():
     pass
 
-def example_two():
+def second_example():
     return 5
 
-def example_three(x):
+def third_example(x):
     return x
 ```
 ```python
@@ -17,22 +17,10 @@ def example_three(x):
 
 x = 7
 
-def example_four(x):
+def fourth_example(x):
     return x + x
 
-example_four(3)
-```
-```python
-#!/usr/bin/env python
-
-def example_five(x, y):
-    return x + y
-
-def example_six(x):
-    def example_five(x, y):
-        return x * y
-
-    return example_five(x, x)
+print(fourth_example(3))
 ```
 ```python
 #!/usr/bin/env python
@@ -43,7 +31,7 @@ def func(x, fund):
 def fune(x):
     return x ** 2
 
-func(5, fune)
+print(func(5, fune))
 ```
 ```python
 
@@ -51,13 +39,19 @@ func(5, fune)
 def func(x):
     return x * x
 
-li = [0, 1, 2, 3, 4, 5, 6, 7]
+li = [3, 4, 5, 6, 7, 8, 9, 10]
 
+_ = input()
+for element in li:
+    print(element)
+
+_ = input()
 for index, value in enumerate(li):
     li[index] = func(value)
 
 print(li)
 ```
+
 ```python
 #!/usr/bin/env python
 
@@ -72,8 +66,26 @@ def cat_changer():
     cat = 'purr'
     print('inside cat: ', cat)
 
+_ = input()
 cat_changer()
 print('outside cat: ', cat)
+
+_ = input()
+
+def fifth_example(x, y):
+    return x + y
+
+def sixth_example(x):
+    def fifth_example(x, y):
+        return x * y
+
+    return fifth_example(x, x)
+
+_ = input()
+print(fifth_example(10))
+
+_ = input()
+print(sixth_example(10))
 ```
 
  - Review dictionary methods

@@ -76,7 +76,7 @@ print "THIS IS HOW YOU PRINT IN PYTHON 2.x"
 ```
 ### String concatenation and format() method
 ```python
-#!/usr/bin/env/python
+#!/usr/bin/env python
 
 def pause():
     # pause program until user input
@@ -101,7 +101,11 @@ print(z)
 z = '{} loves {}!'
 print(z.format(x, y))
 print(z.format(y, x))
+
 print(z.format('philip', 'hats'))
+
+print(str.format(z, 'student', 'learning'))
+print(str.format(z, 'raver',   'dancing'))
 
 ```
 
@@ -149,10 +153,10 @@ print('z', my_story.count('z'))
 #!/usr/bin/env python
 
 x = input("Into variable 'x' i will save the value :")
-print("into x I saved the value {x}".format(x=x))
+print("into x I saved the value {x}!".format(x=x))
 
 x = input('again :')
-print("into x I saved the value {x}".format(x=x))
+print("into x I saved the value {x}!".format(x=x))
 
 y = input('what about something else?')
 print(y, 'has been saved into a variable in my program.')
@@ -163,4 +167,3 @@ print(y, 'has been saved into a variable in my program.')
 ```
 
 ### Have the students make a [Madlib](./example-files/madlib.py)
-
