@@ -24,9 +24,6 @@ There exists a copy of this material online, feel free to enjoy it.
 4. [Day 4](./4DAY.md)
 
 
-# Day 4
- - Python Modules
-    * Pip
 
 # Day 5
  - Classes

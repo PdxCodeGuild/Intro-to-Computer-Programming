@@ -4,9 +4,9 @@
 2. [Python](https://github.com/selassid/codeguild/blob/master/notes/py.md)
 
 ## Shell
-A shell is another way for you to interact with your computer. This is often a CLI (Command Line Interface) as apposed to a GUI (Graphical User Interface). Developers often favor CLI due to the ease of automating repetative tasks. We will to look at [Powershell/Bash](https://github.com/selassid/codeguild/blob/master/notes/cli.md) and how it compares to your GUI.
+A shell is another way for you to interact with your computer. This is often a CLI (Command Line Interface) as apposed to a GUI (Graphical User Interface). Developers often favor CLI due to the ease of automating repetitive tasks. We will to look at [Powershell/Bash](https://github.com/selassid/codeguild/blob/master/notes/cli.md) and how it compares to your GUI.
 
-[Learn Python the Hard Way - Apendix A](http://learnpythonthehardway.org/book/appendixa.html)
+[Learn Python the Hard Way - Appendix A](http://learnpythonthehardway.org/book/appendixa.html)
 
 ## Python
 In this course we are introducing you to python. Our first exercise will show you how to make a python file, establish a workflow, understand variables and introduce some programming vocabulary.
