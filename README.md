@@ -1,13 +1,19 @@
 # Learn Python the Guild Way
 
 ## Overall Goals
-1. Give attendees a basic foundation to launch their learning journey (ex. Setting up environment)
-2. Vet students who have applied to bootcamp
-3. Create an opportunity for students to decide if programming is for them
+1. Give attendees a basic foundation to launch their learning journey
+2. Assess students who have applied to bootcamp
+3. Introduce students to programming
+3. Create a first opportunity for students to decide if programming is for them
 4. Market Code Guild
 
 ## Form of Course
-As a student here, you will have access to this material. I intend to walk through the material, likely straying from each days preperations, and end each class with a print out.
+As a student here, you will have access to this material. I intend to walk through the material, likely straying from each days preparations, and end each class with a print out.
+
+1. If you are confused, let me know.
+2. If you are unsure if something I am typing is functionally critical, ask.
+3. If your work environment behaves differently, ask.
+4. If I use a term you do not recognize, ask.
 
 There exists a copy of this material online, feel free to enjoy it.
 
@@ -15,6 +21,7 @@ There exists a copy of this material online, feel free to enjoy it.
 1. [Day 1](./1DAY.md)
 2. [Day 2](./2DAY.md)
 3. [Day 3](./3DAY.md)
+4. [Day 4](./4DAY.md)
 
 
 # Day 4
@@ -111,4 +118,3 @@ class MinimumBalanceAccount(BankAccount):
 
 # Day 6
  - I normally don’t have anything set for day 6 because the other days will eat into this.
- 

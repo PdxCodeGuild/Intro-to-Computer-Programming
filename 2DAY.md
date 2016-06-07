@@ -221,10 +221,10 @@ True
 ```
 
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
-Sets are unordered but faster.
+Sets are mutable unordered collections with fast lookup.
 ```
->>> *li,  = range(200000000)
->>> si    = set(li)
+>>> li = list(range(200000000))
+>>> si = set(li)
 >>> value = li[-1]
 >>> value
 199999999
@@ -244,11 +244,30 @@ True
 ```
 
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-1.
-2. Check out my [videos](https://www.youtube.com/watch?v=rtwAG8EdgDE&index=2&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S) on dictionaries if you need more information. This is about 30 minutes of content going from introductory to advanced use of dictionaries. My environment is a little different, so print statements may show up differently than you are used to.
+```python
+d = dict()
+d['a'] = 'apple'
+d['b'] = 'baboon'
+d[1] = 'one'
+
+```
+
+For more information, checkout my [videos](https://www.youtube.com/watch?v=rtwAG8EdgDE&index=2&list=PL96V6k-MWWMhAXQmH0AJDKM6WnfpaCx4S) on dictionaries if you need more information. This is about 30 minutes of content going from introductory to advanced use of dictionaries. My environment is a little different, so print statements may show up differently than you are used to.
 
 ### Tuple and collections.namedtuple
+tuples are immutable ordered collections
+```
+pos = (10, 20)
+print(pos)
+print(pos[0])
+print(pos[1])
 
+pos
+
+Position = namedtuple('Position', ['x', 'y'])
+pos = Position(10, 20)
+print(pos)
+```
 ## Control Flow
 ### if, elif and else, ternary
 ```
