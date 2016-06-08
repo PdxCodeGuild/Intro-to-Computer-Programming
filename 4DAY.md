@@ -77,5 +77,5 @@ image = Image.open(filename)
 outname, ext = filename.rsplit('.', 1)
 size = (128, 128)
 image.thumbnail(size)
-image.save(outname + '.thumbnail.' + ext)
+image.save('.'.join(['thumbnail', ext])
 ```
