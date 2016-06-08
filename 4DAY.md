@@ -1,4 +1,5 @@
 # Day 4 - Python Modules and `pip`
+
 Language popularity is strongly correlated to **batteries included** and **package management**.
 
 ### Batteries Included
@@ -23,6 +24,7 @@ Quills                           |   Philip Kaufman         |   124
 The Man from Earth               |   Richard Schenkman      |   87      
 The Quest                        |   Jean-Claude Van Damme  |   95      
 The Nine Lives of Fritz the Cat  |   Robert Taylor          |   77      
+
 ```python
 #!/usr/bin/env python
 
@@ -53,9 +55,11 @@ for dictionary in list_of_dictionaries:
         print(key, ':', dictionary[key], end='\t\t')
     print(end='\n')
 ```
+
 ### Package Management
 
 Anything you need that isn't provided, is easy to get. `pip` interfaces with the python package index to gain you access to user developed libraries.
+
 ---
 ```bash
 $ pip install --user pillow
