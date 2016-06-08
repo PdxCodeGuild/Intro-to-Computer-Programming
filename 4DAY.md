@@ -24,6 +24,8 @@ The Man from Earth               |   Richard Schenkman      |   87
 The Quest                        |   Jean-Claude Van Damme  |   95      
 The Nine Lives of Fritz the Cat  |   Robert Taylor          |   77      
 ```python
+#!/usr/bin/env python
+
 import csv
 
 def parse_file(DATAFILE, lines):
@@ -51,8 +53,22 @@ for dictionary in list_of_dictionaries:
         print(key, ':', dictionary[key], end='\t\t')
     print(end='\n')
 ```
-
+### Package Management
+Anything you need that isn't provided, is easy to get. `pip` interfaces with the python package index to gain you access to user developed libraries.
+---
+```bash
+$ pip install --user pillow
+```
 ```python
 #!/usr/bin/env python
 
+from PIL import Image
+
+filename = './example-files/lena_color.gif'
+image = Image.open(filename)
+
+outname, ext = filename.rsplit('.', 1)
+size = (128, 128)
+image.thumbnail(size)
+image.save(outname + '.thumbnail.' + ext)
 ```
