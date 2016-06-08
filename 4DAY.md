@@ -54,6 +54,7 @@ for dictionary in list_of_dictionaries:
     print(end='\n')
 ```
 ### Package Management
+
 Anything you need that isn't provided, is easy to get. `pip` interfaces with the python package index to gain you access to user developed libraries.
 ---
 ```bash
