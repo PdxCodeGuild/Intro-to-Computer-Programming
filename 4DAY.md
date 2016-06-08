@@ -3,7 +3,9 @@
 Language popularity is strongly correlated to **batteries included** and **package management**.
 
 ### Batteries Included
+
 Almost anything you need, in order to be productive is included in the standard library.
+
 ---
 https://stackoverflow.com/questions/32917376/parsing-a-csv-file-in-python-and-saving-to-a-dictionary-which-is-in-turn-saved-t/32917811#32917811
 
