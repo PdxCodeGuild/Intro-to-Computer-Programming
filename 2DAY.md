@@ -383,6 +383,19 @@ while True:
     print(text)
 ```
 
+## Rot 13
+Your assignment is to write a ROT13 encoder. You should take as input a text string, then print a ROT13 encoded copy of the message
+
+```python
+#!/usr/bin/env python
+
+original_message = input('what message would you like encoded')
+for character in original_message:
+    ...
+...
+```
+
+## Boolean Games
 - Conditional Logic/Booleans
  - Boolean quiz at [boolgame.py](./example-files/boolgame.py)
  - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
