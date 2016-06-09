@@ -137,7 +137,6 @@ def main():
             ...
 
         take_turn(word, template)
-        turns = turns - 1
 
     if win:
         ...
