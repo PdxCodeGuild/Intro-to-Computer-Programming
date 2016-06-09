@@ -149,6 +149,27 @@ print('z', my_story.count('z'))
 ```
 
 ### Input()
+
+```python
+x = input()
+print(x)
+
+message = input()
+print(message, x)
+
+x = input()
+print(x, message, x)
+
+print('Please Input Text :', end='')
+text = input()
+print(text, 'Was Input!')
+
+text = input('perhaps a cleaner input:')
+print(text)
+```
+
+### Have the students make a [Madlib](./example-files/madlib.py)
+
 ```python
 #!/usr/bin/env python
 
@@ -165,5 +186,3 @@ print('again :')
 y = input()
 print(y, 'has been saved into a variable in my program.')
 ```
-
-### Have the students make a [Madlib](./example-files/madlib.py)
