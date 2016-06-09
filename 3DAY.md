@@ -130,15 +130,11 @@ def take_turn(word, template):
 
 def main():
     win   = False
-    turns = 10
     word, template = set_word()
 
-    while True:
+    for turn in range(10):
         if iscomplete(word, template):
             ...
-
-        if turns == 0:
-            break
 
         take_turn(word, template)
         turns = turns - 1
