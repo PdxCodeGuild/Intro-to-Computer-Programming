@@ -11,6 +11,13 @@ A shell is another way for you to interact with your computer. This is often a C
 ## Python
 In this course we are introducing you to python. Our first exercise will show you how to make a python file, establish a workflow, understand variables and introduce some programming vocabulary.
 
+![python](example-files/python.png)
+
+![python](example-files/cpython.png)
+
+![python](example-files/interpreter.png)
+
+
 I suggest having `ipython shell` and your `atom editor` both open in your workspace, until you develop your own work flow. Those with mac or linux can install use `bpython shell` if they prefer.
 
 ### disabling magic in your ipython environment
