@@ -1,6 +1,6 @@
 # Day 1 - Setup Environment, Shell, Basic Programming, First Exercise
 ## Setup Environment
-pyreadline
+
 1. [Atom](https://github.com/selassid/codeguild/blob/master/notes/atom.md) and [Tricks](https://github.com/selassid/codeguild/blob/master/notes/atom-python.md)
 2. [Python](https://github.com/selassid/codeguild/blob/master/notes/py.md)
 
@@ -19,7 +19,7 @@ In this course we are introducing you to python. Our first exercise will show yo
 ![python](example-files/interpreter.png)
 
 
-I suggest having `ipython shell` and your `atom editor` both open in your workspace, until you develop your own work flow. Those with mac or linux can install use `bpython shell` if they prefer.
+I suggest having `ipython shell` and your `atom editor` both open in your workspace, until you develop your own work flow. Those with mac or linux can install use `bpython shell` if they prefer. Users of `ipython` on `Windows` will need to install `pyreadline`.
 
 ### disabling magic in your ipython environment
 ```
