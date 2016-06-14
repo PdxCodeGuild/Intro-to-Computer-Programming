@@ -1,5 +1,6 @@
 # Day 1 - Setup Environment, Shell, Basic Programming, First Exercise
 ## Setup Environment
+pyreadline
 1. [Atom](https://github.com/selassid/codeguild/blob/master/notes/atom.md) and [Tricks](https://github.com/selassid/codeguild/blob/master/notes/atom-python.md)
 2. [Python](https://github.com/selassid/codeguild/blob/master/notes/py.md)
 
