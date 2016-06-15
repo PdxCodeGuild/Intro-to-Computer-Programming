@@ -317,24 +317,45 @@ In [21]:
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
 Sets are mutable unordered collections with fast lookup.
 ```
->>> li = list(range(200000000))
->>> si = set(li)
->>> value = li[-1]
->>> value
-199999999
->>> value in li
-True
->>> value in si
-True
-```
-```
->>> li = ['pig', 'elephant', 345]
->>> si = set(li)
->>> print(si)
-{345, 'pig', 'elephant'}
->>> si.add('olympia')
->>> si
-{'olympia', 345, 'pig', 'elephant'}
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: li = list(range(100000000))
+
+In [2]: si = set(range(100000000))
+
+In [3]: value = li[-1]
+
+In [4]: value
+Out[4]: 99999999
+
+In [5]: value in li
+Out[5]: True
+
+In [6]: value in si
+Out[6]: True
+
+In [7]: li = ['pig', 'elephant', 345]
+
+In [8]: si = set(li)
+
+In [9]: si
+Out[9]: {'elephant', 345, 'pig'}
+
+In [10]: si.add('olympia')
+
+In [11]: si
+Out[11]: {'elephant', 345, 'pig', 'olympia'}
+
+In [12]: 
+
 ```
 
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
