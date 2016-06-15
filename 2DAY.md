@@ -73,14 +73,22 @@ capitalize(...)
 * `join`
 * `partition`, `rpartition`
 ```
->>> str.upper('cat')
-'CAT'
->>> 'cat'.upper()
-'CAT'
->>> '**** {} ****'.format(9)
-'**** 9 ****'
->>> '**** {} ****'.format('grape')
-'**** grape ****'
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: str.upper('cat')
+Out[1]: 'CAT'
+
+In [2]: 'cat'.upper()
+Out[2]: 'CAT'
+
 ```
 ### Integer
 ```
