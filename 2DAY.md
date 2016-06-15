@@ -92,61 +92,108 @@ Out[2]: 'CAT'
 ```
 ### Integer
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> type(5)
-<class 'int'>
->>> type(6 + 3)
-<class 'int'>
->>> int.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ bit_length      conjugate       denominator     from_bytes                       │
-│ imag            mro             numerator       real                             │
-│ to_bytes                                                                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> bin(9)
-'0b1001'
->>> int.bit_length(9)
-4
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: type(5)
+Out[1]: int
+
+In [2]: type(6 + 3)
+Out[2]: int
+
+In [3]: int.
+int.bit_length   int.from_bytes   int.real
+int.conjugate    int.imag         int.to_bytes
+int.denominator  int.numerator    
+
+In [3]: bin(9)
+Out[3]: '0b1001'
+
+In [4]: int.bit_length(9)
+Out[4]: 4
+
+In [5]: x = 9
+
+In [6]: x.bit_length()
+Out[6]: 4
+
+In [7]: 9.bit_length()
+  File "<ipython-input-7-b579d6975e70>", line 1
+    9.bit_length()
+               ^
+SyntaxError: invalid syntax
+
+In [7]:
 ```
 ### Boolean
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> True
-True
->>> False
-False
->>> 1 == 1
-True
->>> 1 == 3
-False
->>> any((1 == 1, 1 == 3))
-True
->>> all((True, True, False))
-False
->>> any((True, False, False))
-True
->>> not True
-False
->>> not False
-True
->>> bool.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ bit_length       conjugate        denominator      from_bytes                    │
-│ imag             mro              numerator        real                          │
-│ to_bytes                                                                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> issubclass(bool, int)
-True
->>> bool.mro()
-[<class 'bool'>, <class 'int'>, <class 'object'>]
->>> not 1
-False
->>> not 0
-True
->>> (True/5)**(True + 4)
-0.0003200000000000001
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: 
+
+In [1]: True
+Out[1]: True
+
+In [2]: False
+Out[2]: False
+
+In [3]: 1 == 1
+Out[3]: True
+
+In [4]: 1 == 3
+Out[4]: False
+
+In [5]: any([1 == 1, 1 == 3])
+Out[5]: True
+
+In [6]: all([1 == 1, 1 == 3])
+Out[6]: False
+
+In [7]: all([True, True, True])
+Out[7]: True
+
+In [8]: not True
+Out[8]: False
+
+In [9]: not False
+Out[9]: True
+
+In [10]: type(True)
+Out[10]: bool
+
+In [11]: bool.
+bool.bit_length   bool.from_bytes   bool.real
+bool.conjugate    bool.imag         bool.to_bytes
+bool.denominator  bool.numerator    
+
+In [11]: issubclass(bool, int)
+Out[11]: True
+
+In [12]: not 1
+Out[12]: False
+
+In [13]: not 0
+Out[13]: True
+
+In [14]: (True / 5) ** (True + 4)
+Out[14]: 0.0003200000000000001
+
+In [15]: 
 ```
 ### Float
 ```
