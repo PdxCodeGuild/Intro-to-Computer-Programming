@@ -386,28 +386,43 @@ print(pos)
 ## Control Flow
 ### if, elif and else, ternary
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> if 1 == 1:
-...     print("cat")
-...
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: if 1 == 1:
+   ...:     print('cat')
+   ...:     
 cat
->>> if 1 == 3:
-...     print("cat")
-... else:
-...     print("dog")
-...
+
+In [2]: if 1 == 3:
+   ...:     print('cat')
+   ...:     
+
+In [3]: if 1 == 3:
+   ...:     print('cat')
+   ...: else:
+   ...:     print('dog')
+   ...:     
 dog
->>> print("cat" if 1 == 1 else "dog")
+
+In [4]: print('cat' if 1 == 1 else 'dog')
 cat
->>> print("cat" if 1 == 3 else "dog")
-dog
->>> if 0:
-...     print("0 equals true")
-... elif 1:
-...     print("1 equals true")
-...
-1 equals true
+
+In [5]: if 0:
+   ...:     print('0 equals True')
+   ...: elif 1:
+   ...:     print('1 equals True')
+   ...: else:
+   ...:     print('neither equals True')
+   ...:     
+1 equals True
 ```
 ### Loops - For, While, Break, Continue
 Loops are a code structure we use to identify repeated tasks. There are two major types of loops. `for` loops and `while` loops.
