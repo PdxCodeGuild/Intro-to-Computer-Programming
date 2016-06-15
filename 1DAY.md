@@ -40,6 +40,20 @@ In [2]: ip.Completer.matchers.remove(ip.Completer.magic_matches)
 In [3]:
 ```
 
+### print()
+1. The `print()` function allows us to write content to the `console`, also called a `terminal` or `CLI`.
+2. You may find **reputable** resources with examples online that just don't work. Most people's first experience with this is in python's print. Programming languages have release `versions` that may have different, often competing, `syntax`. This, [Python 2.7 vs Python 3.x](https://www.webucator.com/blog/2016/03/still-using-python-2-it-is-time-to-upgrade/), article can help you drink the Python 3.x Kool Aid.
+```python
+#!/usr/bin/env python3
+
+print("THIS IS HOW YOU PRINT IN PYTHON 3.x")
+```
+```python
+#!/usr/bin/env python2.7
+
+print "THIS IS HOW YOU PRINT IN PYTHON 2.x"
+```
+
 ### Variables and Using Strings
 ```python
 #!/usr/bin/env python
@@ -69,19 +83,6 @@ x, y = y, x
 print(x, y)
 ```
 
-### print()
-1. The `print()` function allows us to write content to the `console`, also called a `terminal` or `CLI`.
-2. You may find **reputable** resources with examples online that just don't work. Most people's first experience with this is in python's print. Programming languages have release `versions` that may have different, often competing, `syntax`. This, [Python 2.7 vs Python 3.x](https://www.webucator.com/blog/2016/03/still-using-python-2-it-is-time-to-upgrade/), article can help you drink the Python 3.x Kool Aid.
-```python
-#!/usr/bin/env python3
-
-print("THIS IS HOW YOU PRINT IN PYTHON 3.x")
-```
-```python
-#!/usr/bin/env python2.7
-
-print "THIS IS HOW YOU PRINT IN PYTHON 2.x"
-```
 ### String concatenation and format() method
 ```python
 #!/usr/bin/env python
