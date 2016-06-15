@@ -197,30 +197,37 @@ In [15]:
 ```
 ### Float
 ```
->>> type(5.5)
-<class 'float'>
->>> float.mro()
-[<class 'float'>, <class 'object'>]
->>> float.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ as_integer_ratio       conjugate              fromhex                            │
-│ hex                    imag                   is_integer                         │
-│ mro                    real                                                      │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> 1/3
-0.3333333333333333
->>> type(1/3)
-<class 'float'>
->>> type(1)
-<class 'int'>
->>> type(3)
-<class 'int'>
->>> type(1/3)
-<class 'float'>
->>> float.as_integer_ratio(1/3)
-(6004799503160661, 18014398509481984)
->>> 6004799503160661/1801439850948198
-0.3333333333333333
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: type(5.5)
+Out[1]: float
+
+In [2]: float.
+float.as_integer_ratio  float.imag
+float.conjugate         float.is_integer
+float.fromhex           float.real
+float.hex               
+
+In [2]: 1/3
+Out[2]: 0.3333333333333333
+
+In [3]: type(1/3)
+Out[3]: float
+
+In [4]: float.as_integer_ratio(1/3)
+Out[4]: (6004799503160661, 18014398509481984)
+
+In [5]: 6004799503160661/18014398509481984
+Out[5]: 0.3333333333333333
+
 ```
 ### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
 List is our first complex data type. A list is an ordered collection of elements.
