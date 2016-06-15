@@ -4,36 +4,52 @@ In this section we develop a more complete understanding of types. In your caree
 
 ### [String](https://docs.python.org/3.5/library/string.html)
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> type('c')
-<class 'str'>
->>> "cat"
-'cat'
->>> type('cat')
-<class 'str'>
->>> 'cat' + 'dog'
-'catdog'
->>> type('cat' + 'dog')
-<class 'str'>
->>> str.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ capitalize       casefold         center           count                         │
-│ encode           endswith         expandtabs       find                          │
-│ format           format_map       index            isalnum                       │
-│ isalpha          isdecimal        isdigit          isidentifier                  │
-│ islower          isnumeric        isprintable      isspace                       │
-│ istitle          isupper          join             ljust                         │
-│ lower            lstrip           maketrans        mro                           │
-│ partition        replace          rfind            rindex                        │
-│ rjust            rpartition       rsplit           rstrip                        │
-│ split            splitlines       startswith       strip                         │
-│ swapcase         title            translate        upper                         │
-│ zfill                                                                            │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> str.capitalize('cat')
-'Cat'
->>> help(str.capitalize)
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: type('c')
+Out[1]: str
+
+In [2]: "cat"
+Out[2]: 'cat'
+
+In [3]: type('cat')
+Out[3]: str
+
+In [4]: 'cat' + 'dog'
+Out[4]: 'catdog'
+
+In [5]: type('cat' + 'dog')
+Out[5]: str
+
+In [6]: str.
+str.capitalize    str.isidentifier  str.rindex
+str.casefold      str.islower       str.rjust
+str.center        str.isnumeric     str.rpartition
+str.count         str.isprintable   str.rsplit
+str.encode        str.isspace       str.rstrip
+str.endswith      str.istitle       str.split
+str.expandtabs    str.isupper       str.splitlines
+str.find          str.join          str.startswith
+str.format        str.ljust         str.strip
+str.format_map    str.lower         str.swapcase
+str.index         str.lstrip        str.title
+str.isalnum       str.maketrans     str.translate
+str.isalpha       str.partition     str.upper
+str.isdecimal     str.replace       str.zfill
+str.isdigit       str.rfind         
+
+In [6]: str.capitalize('cat')
+Out[6]: 'Cat'
+
+In [7]: help(str.capitalize)
 Help on method_descriptor:
 
 capitalize(...)
