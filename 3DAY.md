@@ -88,6 +88,8 @@ _ = input()
 print(sixth_example(10))
 ```
 
+### List Comprehensions
+
 ## Hangman
 ```python
 def set_word():
