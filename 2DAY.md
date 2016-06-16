@@ -489,7 +489,7 @@ _ = input('... pause ...')
 for index, element in enumerate(iterable):
     if index > 3:
         break
-    print(element):
+    print(element)
 
 
 _ = input('... pause ...')
@@ -557,7 +557,3 @@ x   |  k
 y   |  l
 z   |  m
 
-## Boolean Games
-- Conditional Logic/Booleans
- - Boolean quiz at [boolgame.py](./example-files/boolgame.py)
- - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
