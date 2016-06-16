@@ -520,8 +520,11 @@ Your assignment is to write a ROT13 encoder. You should take as input a text str
 #!/usr/bin/env python
 
 original_message = input('what message would you like encoded')
-for character in original_message:
+split_message = list(original_message)
+for index, character in enumerate(split_message):
     ...
+
+print(''.join(split_message))
 ...
 ```
 
