@@ -25,13 +25,13 @@ print(fourth_example(3))
 ```python
 #!/usr/bin/env python
 
-def func(x, fund):
-    return x + fund(x)
+def plus(x, func):
+    return x + func(x)
 
-def fune(x):
+def square(x):
     return x ** 2
 
-print(func(5, fune))
+print(plus(5, square))
 ```
 ```python
 
