@@ -1,3 +1,7 @@
+# Review on whiteboard the current content
+
+We will review the material at a high level, and write the operations we have explored thus far. Open for questions.
+
 # Finding Modules
 
 For today's class, I needed a way to generate names of game players. Lets see if someone else has done it!
