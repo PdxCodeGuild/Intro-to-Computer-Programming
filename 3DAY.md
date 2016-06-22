@@ -25,13 +25,13 @@ print(fourth_example(3))
 ```python
 #!/usr/bin/env python
 
-def func(x, fund):
-    return x + fund(x)
+def plus(x, func):
+    return x + func(x)
 
-def fune(x):
+def square(x):
     return x ** 2
 
-print(func(5, fune))
+print(plus(5, square))
 ```
 ```python
 
@@ -86,6 +86,69 @@ print(fifth_example(10))
 
 _ = input()
 print(sixth_example(10))
+```
+
+### List Comprehensions
+
+## Hangman
+```python
+def set_word():
+    word = input('What phrase would you like to hang? ')
+    template = ['_'] * len(word)
+
+    space    = ' '
+    indicies = get_index(space, word)
+    template = update(space, indicies, template)
+
+    return word, template
+
+
+def get_index(char, word):
+    # return list of index values of character in word
+    ...
+
+
+def update(char, indicies, template):
+    # update the indicies of template with char, then return template
+    ...
+
+
+def iscomplete(word, template):
+    # do the word and template represent the same content?
+    ...
+
+
+def get_character():
+    # get a character from the command line as user input
+    ...
+
+
+def take_turn(word, template):
+    ch = get_character()
+    indicies = get_index(ch, word)
+    template = update(ch, indicies, template)
+    print(template)
+
+
+def main():
+    win   = False
+    word, template = set_word()
+
+    for turn in range(10):
+        if iscomplete(word, template):
+            ...
+
+        take_turn(word, template)
+
+    if win:
+        ...
+    else:
+        ...
+
+
+if __name__ == '__main__':
+    main()
+
 ```
 
  - Review dictionary methods

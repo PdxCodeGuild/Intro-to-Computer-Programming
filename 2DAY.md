@@ -4,36 +4,52 @@ In this section we develop a more complete understanding of types. In your caree
 
 ### [String](https://docs.python.org/3.5/library/string.html)
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> type('c')
-<class 'str'>
->>> "cat"
-'cat'
->>> type('cat')
-<class 'str'>
->>> 'cat' + 'dog'
-'catdog'
->>> type('cat' + 'dog')
-<class 'str'>
->>> str.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ capitalize       casefold         center           count                         │
-│ encode           endswith         expandtabs       find                          │
-│ format           format_map       index            isalnum                       │
-│ isalpha          isdecimal        isdigit          isidentifier                  │
-│ islower          isnumeric        isprintable      isspace                       │
-│ istitle          isupper          join             ljust                         │
-│ lower            lstrip           maketrans        mro                           │
-│ partition        replace          rfind            rindex                        │
-│ rjust            rpartition       rsplit           rstrip                        │
-│ split            splitlines       startswith       strip                         │
-│ swapcase         title            translate        upper                         │
-│ zfill                                                                            │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> str.capitalize('cat')
-'Cat'
->>> help(str.capitalize)
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: type('c')
+Out[1]: str
+
+In [2]: "cat"
+Out[2]: 'cat'
+
+In [3]: type('cat')
+Out[3]: str
+
+In [4]: 'cat' + 'dog'
+Out[4]: 'catdog'
+
+In [5]: type('cat' + 'dog')
+Out[5]: str
+
+In [6]: str.
+str.capitalize    str.isidentifier  str.rindex
+str.casefold      str.islower       str.rjust
+str.center        str.isnumeric     str.rpartition
+str.count         str.isprintable   str.rsplit
+str.encode        str.isspace       str.rstrip
+str.endswith      str.istitle       str.split
+str.expandtabs    str.isupper       str.splitlines
+str.find          str.join          str.startswith
+str.format        str.ljust         str.strip
+str.format_map    str.lower         str.swapcase
+str.index         str.lstrip        str.title
+str.isalnum       str.maketrans     str.translate
+str.isalpha       str.partition     str.upper
+str.isdecimal     str.replace       str.zfill
+str.isdigit       str.rfind         
+
+In [6]: str.capitalize('cat')
+Out[6]: 'Cat'
+
+In [7]: help(str.capitalize)
 Help on method_descriptor:
 
 capitalize(...)
@@ -57,190 +73,289 @@ capitalize(...)
 * `join`
 * `partition`, `rpartition`
 ```
->>> str.upper('cat')
-'CAT'
->>> 'cat'.upper()
-'CAT'
->>> '**** {} ****'.format(9)
-'**** 9 ****'
->>> '**** {} ****'.format('grape')
-'**** grape ****'
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: str.upper('cat')
+Out[1]: 'CAT'
+
+In [2]: 'cat'.upper()
+Out[2]: 'CAT'
+
 ```
 ### Integer
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> type(5)
-<class 'int'>
->>> type(6 + 3)
-<class 'int'>
->>> int.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ bit_length      conjugate       denominator     from_bytes                       │
-│ imag            mro             numerator       real                             │
-│ to_bytes                                                                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> bin(9)
-'0b1001'
->>> int.bit_length(9)
-4
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: type(5)
+Out[1]: int
+
+In [2]: type(6 + 3)
+Out[2]: int
+
+In [3]: int.
+int.bit_length   int.from_bytes   int.real
+int.conjugate    int.imag         int.to_bytes
+int.denominator  int.numerator    
+
+In [3]: bin(9)
+Out[3]: '0b1001'
+
+In [4]: int.bit_length(9)
+Out[4]: 4
+
+In [5]: x = 9
+
+In [6]: x.bit_length()
+Out[6]: 4
+
+In [7]: 9.bit_length()
+  File "<ipython-input-7-b579d6975e70>", line 1
+    9.bit_length()
+               ^
+SyntaxError: invalid syntax
+
+In [7]:
 ```
 ### Boolean
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> True
-True
->>> False
-False
->>> 1 == 1
-True
->>> 1 == 3
-False
->>> any((1 == 1, 1 == 3))
-True
->>> all((True, True, False))
-False
->>> any((True, False, False))
-True
->>> not True
-False
->>> not False
-True
->>> bool.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ bit_length       conjugate        denominator      from_bytes                    │
-│ imag             mro              numerator        real                          │
-│ to_bytes                                                                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> issubclass(bool, int)
-True
->>> bool.mro()
-[<class 'bool'>, <class 'int'>, <class 'object'>]
->>> not 1
-False
->>> not 0
-True
->>> (True/5)**(True + 4)
-0.0003200000000000001
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: 
+
+In [1]: True
+Out[1]: True
+
+In [2]: False
+Out[2]: False
+
+In [3]: 1 == 1
+Out[3]: True
+
+In [4]: 1 == 3
+Out[4]: False
+
+In [5]: any([1 == 1, 1 == 3])
+Out[5]: True
+
+In [6]: all([1 == 1, 1 == 3])
+Out[6]: False
+
+In [7]: all([True, True, True])
+Out[7]: True
+
+In [8]: not True
+Out[8]: False
+
+In [9]: not False
+Out[9]: True
+
+In [10]: type(True)
+Out[10]: bool
+
+In [11]: bool.
+bool.bit_length   bool.from_bytes   bool.real
+bool.conjugate    bool.imag         bool.to_bytes
+bool.denominator  bool.numerator    
+
+In [11]: issubclass(bool, int)
+Out[11]: True
+
+In [12]: not 1
+Out[12]: False
+
+In [13]: not 0
+Out[13]: True
+
+In [14]: (True / 5) ** (True + 4)
+Out[14]: 0.0003200000000000001
+
+In [15]: 
 ```
 ### Float
 ```
->>> type(5.5)
-<class 'float'>
->>> float.mro()
-[<class 'float'>, <class 'object'>]
->>> float.
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ as_integer_ratio       conjugate              fromhex                            │
-│ hex                    imag                   is_integer                         │
-│ mro                    real                                                      │
-└──────────────────────────────────────────────────────────────────────────────────┘
->>> 1/3
-0.3333333333333333
->>> type(1/3)
-<class 'float'>
->>> type(1)
-<class 'int'>
->>> type(3)
-<class 'int'>
->>> type(1/3)
-<class 'float'>
->>> float.as_integer_ratio(1/3)
-(6004799503160661, 18014398509481984)
->>> 6004799503160661/1801439850948198
-0.3333333333333333
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: type(5.5)
+Out[1]: float
+
+In [2]: float.
+float.as_integer_ratio  float.imag
+float.conjugate         float.is_integer
+float.fromhex           float.real
+float.hex               
+
+In [2]: 1/3
+Out[2]: 0.3333333333333333
+
+In [3]: type(1/3)
+Out[3]: float
+
+In [4]: float.as_integer_ratio(1/3)
+Out[4]: (6004799503160661, 18014398509481984)
+
+In [5]: 6004799503160661/18014398509481984
+Out[5]: 0.3333333333333333
+
 ```
 ### [List](https://docs.python.org/3/tutorial/datastructures.html#lists)
 List is our first complex data type. A list is an ordered collection of elements.
 ```
-$ bpython
-bpython version 0.14.2 on top of Python 2.7.8 /usr/bin/python2
->>> lx = list()
->>> lx
-[]
->>> print(type(lx))
-<type 'list'>
->>> li = [3, 3, 3]
->>> print(type(li))
-<type 'list'>
->>> print(li)
-[3, 3, 3]
->>> lj = [4, 5, 6, 7, 8]
->>> print(li + lj)
-[3, 3, 3, 4, 5, 6, 7, 8]
->>> print(lj + li)
-[4, 5, 6, 7, 8, 3, 3, 3]
->>> print(li,lj)
-([3, 3, 3], [4, 5, 6, 7, 8])
->>> lk = ['cat', 'dog', 'elephant', 'pig']
->>> print(lk + li)
-['cat', 'dog', 'elephant', 'pig', 3, 3, 3]
->>> lm = lk + lj
->>> print(lm)
-['cat', 'dog', 'elephant', 'pig', 4, 5, 6, 7, 8]
->>> lm.append('jupiter')
->>> lj
-[4, 5, 6, 7, 8]
->>> lm
-['cat', 'dog', 'elephant', 'pig', 4, 5, 6, 7, 8, 'jupiter']
->>> lm[1]
-'dog'
->>> lm[0]
-'cat'
->>> lm[-1]
-'jupiter'
->>> lm[10]
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: lx = list()
+
+In [2]: lx
+Out[2]: []
+
+In [3]: type(lx)
+Out[3]: list
+
+In [4]: lj = [4, 5, 6, 7, 8]
+
+In [5]: li = [3, 3, 3]
+
+In [6]: li + lj
+Out[6]: [3, 3, 3, 4, 5, 6, 7, 8]
+
+In [7]: li, lj
+Out[7]: ([3, 3, 3], [4, 5, 6, 7, 8])
+
+In [8]: lk = ['cat', 'dog', 'elephant', 'pig']
+
+In [9]: lk + li
+Out[9]: ['cat', 'dog', 'elephant', 'pig', 3, 3, 3]
+
+In [10]: lm = lk + li
+
+In [11]: lm
+Out[11]: ['cat', 'dog', 'elephant', 'pig', 3, 3, 3]
+
+In [12]: lm.append('jupiter')
+
+In [13]: lm
+Out[13]: ['cat', 'dog', 'elephant', 'pig', 3, 3, 3, 'jupiter']
+
+In [14]: lm[1]
+Out[14]: 'dog'
+
+In [15]: lm[0]
+Out[15]: 'cat'
+
+In [16]: lm[-1]
+Out[16]: 'jupiter'
+
+In [17]: lm[-3]
+Out[17]: 3
+
+In [18]: lm[10]
+-------------------------------------------------------------------
+IndexError                        Traceback (most recent call last)
+<ipython-input-18-cae65832bdd4> in <module>()
+----> 1 lm[10]
+
 IndexError: list index out of range
->>> lm[-10]
-'cat'
->>> lm[-11]
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
+
+In [19]: lm[-10]
+-------------------------------------------------------------------
+IndexError                        Traceback (most recent call last)
+<ipython-input-19-206629d09aba> in <module>()
+----> 1 lm[-10]
+
 IndexError: list index out of range
->>> lm.
-┌──────────────────────────────────────────────────────────┐
-│ append     count      extend     index      insert       │
-│ pop        remove     reverse    sort                    │
-└──────────────────────────────────────────────────────────┘
->>> lm == lm
-True
->>> lm is lm
-True
->>> li
-[3, 3, 3]
->>> li == [3, 3, 3]
-True
->>> li is [3, 3, 3]
-False
->>> 4 is 4
-True
->>>
+
+In [20]: lm.
+lm.append   lm.count    lm.insert   lm.reverse  
+lm.clear    lm.extend   lm.pop      lm.sort     
+lm.copy     lm.index    lm.remove   
+
+In [20]: li == [3, 3, 3]
+Out[20]: True
+
+In [21]: 
 ```
 
 ### [Set](https://docs.python.org/3/tutorial/datastructures.html#sets)
 Sets are mutable unordered collections with fast lookup.
 ```
->>> li = list(range(200000000))
->>> si = set(li)
->>> value = li[-1]
->>> value
-199999999
->>> value in li
-True
->>> value in si
-True
-```
-```
->>> li = ['pig', 'elephant', 345]
->>> si = set(li)
->>> print(si)
-{345, 'pig', 'elephant'}
->>> si.add('olympia')
->>> si
-{'olympia', 345, 'pig', 'elephant'}
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: li = list(range(100000000))
+
+In [2]: si = set(range(100000000))
+
+In [3]: value = li[-1]
+
+In [4]: value
+Out[4]: 99999999
+
+In [5]: value in li
+Out[5]: True
+
+In [6]: value in si
+Out[6]: True
+
+In [7]: li = ['pig', 'elephant', 345]
+
+In [8]: si = set(li)
+
+In [9]: si
+Out[9]: {'elephant', 345, 'pig'}
+
+In [10]: si.add('olympia')
+
+In [11]: si
+Out[11]: {'elephant', 345, 'pig', 'olympia'}
+
+In [12]: 
+
 ```
 
 ### [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
@@ -271,28 +386,43 @@ print(pos)
 ## Control Flow
 ### if, elif and else, ternary
 ```
-$ bpython
-bpython version 0.15 on top of Python 3.4.2 /usr/bin/python3
->>> if 1 == 1:
-...     print("cat")
-...
+$ ipython3 -i unmagic.py
+Python 3.4.2 (default, Jul  9 2015, 17:24:30) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.2.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: if 1 == 1:
+   ...:     print('cat')
+   ...:     
 cat
->>> if 1 == 3:
-...     print("cat")
-... else:
-...     print("dog")
-...
+
+In [2]: if 1 == 3:
+   ...:     print('cat')
+   ...:     
+
+In [3]: if 1 == 3:
+   ...:     print('cat')
+   ...: else:
+   ...:     print('dog')
+   ...:     
 dog
->>> print("cat" if 1 == 1 else "dog")
+
+In [4]: print('cat' if 1 == 1 else 'dog')
 cat
->>> print("cat" if 1 == 3 else "dog")
-dog
->>> if 0:
-...     print("0 equals true")
-... elif 1:
-...     print("1 equals true")
-...
-1 equals true
+
+In [5]: if 0:
+   ...:     print('0 equals True')
+   ...: elif 1:
+   ...:     print('1 equals True')
+   ...: else:
+   ...:     print('neither equals True')
+   ...:     
+1 equals True
 ```
 ### Loops - For, While, Break, Continue
 Loops are a code structure we use to identify repeated tasks. There are two major types of loops. `for` loops and `while` loops.
@@ -359,7 +489,7 @@ _ = input('... pause ...')
 for index, element in enumerate(iterable):
     if index > 3:
         break
-    print(element):
+    print(element)
 
 
 _ = input('... pause ...')
@@ -390,12 +520,40 @@ Your assignment is to write a ROT13 encoder. You should take as input a text str
 #!/usr/bin/env python
 
 original_message = input('what message would you like encoded')
-for character in original_message:
+split_message = list(original_message)
+for index, character in enumerate(split_message):
     ...
+
+print(''.join(split_message))
 ...
 ```
 
-## Boolean Games
-- Conditional Logic/Booleans
- - Boolean quiz at [boolgame.py](./example-files/boolgame.py)
- - I usually have students make a program that will sort things from a list into other lists depending on the datatype or something along those lines
+in  | out
+----|----
+a   |  n
+b   |  o
+c   |  p
+d   |  q
+e   |  r
+f   |  s
+g   |  t
+h   |  u
+i   |  v
+j   |  w
+k   |  x
+l   |  y
+m   |  z
+n   |  a
+o   |  b
+p   |  c
+q   |  d
+r   |  e
+s   |  f
+t   |  g
+u   |  h
+v   |  i
+w   |  j
+x   |  k
+y   |  l
+z   |  m
+
