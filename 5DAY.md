@@ -1,5 +1,7 @@
 # Finding Modules
 
+For today's class, I needed a way to generate names of game players. Lets see if someone else has done it!
+
 ![Names search](./example-files/search.png)
 
 ![Names search](./example-files/find.png)
