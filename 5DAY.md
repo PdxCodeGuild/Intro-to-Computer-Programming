@@ -4,7 +4,7 @@
 
 ![Names search](./example-files/find.png)
 
-```python
+```
 $ pip install --user names
 ```
 
