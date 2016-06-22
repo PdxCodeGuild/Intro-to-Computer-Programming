@@ -4,6 +4,11 @@
 
 ![Names search](./example-files/find.png)
 
+```python
+$ pip install --user names
+```
+
+# Blackjack template
 
 ```python
 #!/usr/bin/env python                                                                                    
