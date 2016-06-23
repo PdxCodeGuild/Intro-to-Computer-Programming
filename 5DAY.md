@@ -6,6 +6,10 @@ We will review the material at a high level, and write the operations we have ex
 
 For today's class, I needed a way to generate names of game players. Lets see if someone else has done it!
 
+```
+https://pypi.python.org/pypi
+```
+
 ![Names search](./example-files/search.png)
 
 ![Names search](./example-files/find.png)
