@@ -1,3 +1,6 @@
+# Boot Camp
+http://pdxcodeguild.com/
+
 # Finding Modules
 
 For today's class, I needed a way to generate names of game players. Lets see if someone else has done it!
