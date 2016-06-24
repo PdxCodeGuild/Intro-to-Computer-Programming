@@ -3,8 +3,10 @@ http://pdxcodeguild.com/
 * Full Stack
 * Front End
 
-# Finding Modules
+# More on Modules
+We firts identify a tast, then we search for a package that provides that facility. In this instance, we are in needs of random names of people for our *Simplified Blackjack*.
 
+### Finding a Module
 For today's class, I needed a way to generate names of game players. Lets see if someone else has done it!
 
 ```
@@ -14,6 +16,12 @@ https://pypi.python.org/pypi
 ![Names search](./example-files/search.png)
 
 ![Names search](./example-files/find.png)
+
+### Audit the code
+Although it isn't common practice for small projects, industry projects often have an auditing process. This is a small enough module for us to audit during class. 
+
+### Installing **names**
+Please do not use `sudo`. It is dangerous to install packages with the `sudo` command on your system.
 
 ```
 $ pip install --user names
@@ -43,18 +51,23 @@ def new_deck():
     deck = []
     for suit in ['H', 'C', 'S', 'D']:
         for face in ['2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K', 'A']:
-             deck.append(Card(suit=suit, face=face))
+            new_card = Card(suit=suit, face=face)
+            deck.append(new_card)
     shuffle(deck)
     return deck
 
 
-...
-
+... # define each logical step as a function stub ie
 
 def main():
-    deck    = new_deck()
-    count   = 3
-    players = dict((get_full_name(), []) for _ in range(count))
+    num_of_players = 3
+
+    deck = new_deck()
+    for _ in range(num_of_players):
+        name = get_full_name()
+        hand = []
+        deck[name] = hand
+        ... # need to draw two cards per player from deck
 
     for index, name in enumerate(cycle(players.keys())):
         print('{} : takes turn {}'.format(name, index))
