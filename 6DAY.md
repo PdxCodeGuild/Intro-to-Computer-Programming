@@ -1,5 +1,3 @@
-# Walk Through Solutions of BlackJack
-
 # Scoping Problems
 
 ```python
@@ -30,6 +28,8 @@ def context():
     _ = input('what does "{}" mean in this context?'.format(item))
 
 ```
+
+# Walk Through Solutions of BlackJack
 
 # Assignment
 For this assignment, you will get to choose your own task. If you cannot think of one, select from the list below.
