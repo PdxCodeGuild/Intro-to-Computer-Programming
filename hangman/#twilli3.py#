@@ -1,0 +1,77 @@
+def set_phrase():
+    phrase = input('What phrase would you like to hang? ')
+    template = ['_'] * len(phrase)
+    bad_char=[]
+    space    = ' '
+    for index, element in enumerate(phrase):
+        if phrase[index] == space:
+            template[index] = space
+    return phrase, template, bad_char
+
+
+def get_index(char, phrase):
+    # return list of index values of character in phrase
+    correct_char=[]
+    correct=False
+    for index, element in enumerate (phrase):
+        if char == element:
+            correct_char.append(index)
+            correct = True
+    return correct_char, correct
+
+
+
+def update(char, indicies, template, bad_char):
+    # update the indicies of template with char, then return template
+    for index in indicies:
+        template[index]=char
+    if not indicies:
+        bad_char.append(char)
+    print('bad guesses ', bad_char)
+    return template, bad_char
+https://github.com/PdxCodeGuild/Intro-to-Computer-Programming/blob/master/example-files/find.png 
+def iscomplete(phrase, template):
+    # do the phrase and template represent the same content?
+    for index, element in enumerate(phrase):
+        if not phrase[index] == template[index]:
+            return False
+    return True
+
+
+def get_character():
+    # get a character from the command line as user input
+    guess = input('guess a letter:  ')
+    return guess
+
+
+def take_turn(phrase, template, bad_char):
+    ch = get_character()
+    indicies, correct = get_index(ch, phrase)
+    template,bad_char = update(ch, indicies, template,bad_char)
+    print(template)
+    return correct
+
+
+def main():
+    win = False
+    phrase, template, bad_char = set_phrase()
+    #print(phrase)
+    print(template)
+
+    i=0
+    while i<6:
+        if iscomplete(phrase, template):
+            win = True
+            break
+        correct=take_turn(phrase, template, bad_char)
+        if not correct:
+            i=i+1
+
+    if win:
+        print ('You are a WINNER')
+    else:
+        print('Loser!')
+
+
+if __name__ == '__main__':
+    main()
