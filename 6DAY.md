@@ -1,4 +1,4 @@
-# Scoping Problems
+# Review of Scoping Problems
 
 ```python
 #!/usr/bin/env python3

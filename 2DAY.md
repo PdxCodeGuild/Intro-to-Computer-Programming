@@ -90,6 +90,9 @@ In [2]: 'cat'.upper()
 Out[2]: 'CAT'
 
 ```
+
+Students will now be asked to investigate one of the methods on strings, then talk about it.
+
 ### Integer
 ```
 $ ipython3 -i unmagic.py
@@ -304,9 +307,9 @@ IndexError                        Traceback (most recent call last)
 IndexError: list index out of range
 
 In [20]: lm.
-lm.append   lm.count    lm.insert   lm.reverse  
-lm.clear    lm.extend   lm.pop      lm.sort     
-lm.copy     lm.index    lm.remove   
+lm.append   lm.count    lm.insert   lm.reverse
+lm.clear    lm.extend   lm.pop      lm.sort
+lm.copy     lm.index    lm.remove
 
 In [20]: li == [3, 3, 3]
 Out[20]: True

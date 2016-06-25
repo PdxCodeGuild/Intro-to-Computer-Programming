@@ -91,6 +91,8 @@ print(sixth_example(10))
 ### List Comprehensions
 
 ## Hangman
+Implement hangman from this template. The `...` are used to denote where code will need to be added.
+
 ```python
 def set_word():
     word = input('What phrase would you like to hang? ')

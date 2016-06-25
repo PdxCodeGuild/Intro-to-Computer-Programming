@@ -32,6 +32,11 @@ $ pip install --user names
 We will review the material at a high level, and write the operations we have explored thus far. Open for questions.
 
 # Blackjack template
+Modifications to rules
+1. Ace = 1
+2. Closest to 21, while less wins
+3. No need to hide cards
+4. Dealer doesn't player
 
 ```python
 #!/usr/bin/env python                                                                                    
@@ -50,7 +55,7 @@ def new_deck():
 
     deck = []
     for suit in ['H', 'C', 'S', 'D']:
-        for face in ['2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K', 'A']:
+        for face in ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']:
             new_card = Card(suit=suit, face=face)
             deck.append(new_card)
     shuffle(deck)
