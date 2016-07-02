@@ -32,7 +32,9 @@ $ pip install --user names
 We will review the material at a high level, and write the operations we have explored thus far. Open for questions.
 
 # Blackjack template
+
 Modifications to rules
+
 1. Ace = 1
 2. Closest to 21, while less wins
 3. No need to hide cards
