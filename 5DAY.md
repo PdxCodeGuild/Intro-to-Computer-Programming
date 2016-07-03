@@ -68,12 +68,13 @@ def new_deck():
 
 def main():
     num_of_players = 3
+    players = dict()
 
     deck = new_deck()
     for _ in range(num_of_players):
         name = get_full_name()
         hand = []
-        deck[name] = hand
+        players[name] = hand
         ... # need to draw two cards per player from deck
 
     for index, name in enumerate(cycle(players.keys())):
