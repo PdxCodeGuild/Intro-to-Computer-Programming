@@ -34,5 +34,5 @@ def context():
 # Assignment
 For this assignment, you will get to choose your own task. If you cannot think of one, select from the list below.
 * Image Manipulation (ie. Rotate, Extract RGB, Shrink)
-* Save image of ploted Graph (ie. Histogram, Equation, Pie-Chart) [May be harder on Windows]
+* Save image of plotted Graph (ie. Histogram, Equation, Pie-Chart) [May be harder on Windows]
 * System Administration (ie. Launch Command, Access Environment Variables)
