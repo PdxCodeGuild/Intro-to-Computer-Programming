@@ -32,6 +32,6 @@ There exists a copy of this material online, feel free to enjoy it.
 2. [Day 2](./2DAY.md)
 3. [Day 3](./3DAY.md)
 4. [Day 4](./4DAY.md)
-4. [Day 5](./4DAY.md)
-4. [Day 6](./4DAY.md)
+4. [Day 5](./5DAY.md)
+4. [Day 6](./6DAY.md)
 

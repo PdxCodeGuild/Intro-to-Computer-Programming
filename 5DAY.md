@@ -32,7 +32,9 @@ $ pip install --user names
 We will review the material at a high level, and write the operations we have explored thus far. Open for questions.
 
 # Blackjack template
+
 Modifications to rules
+
 1. Ace = 1
 2. Closest to 21, while less wins
 3. No need to hide cards
@@ -66,12 +68,13 @@ def new_deck():
 
 def main():
     num_of_players = 3
+    players = dict()
 
     deck = new_deck()
     for _ in range(num_of_players):
         name = get_full_name()
         hand = []
-        deck[name] = hand
+        players[name] = hand
         ... # need to draw two cards per player from deck
 
     for index, name in enumerate(cycle(players.keys())):

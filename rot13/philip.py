@@ -13,7 +13,7 @@ for index, character in enumerate(split_message):
     
     split_message[index] = lookup[character.lower()]
     if character.isupper():
-  split_message[index] = split_message[index].upper()
+        split_message[index] = split_message[index].upper()
 
 print(''.join(split_message))
 
